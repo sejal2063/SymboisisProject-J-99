@@ -1,0 +1,22 @@
+//ASSIGNMENT12
+//CHEK GIVEN CHARECTER IS SPECIAL SYMBOL,DIGIT OR CHARACTER
+import java.util.*;
+public class CharSyDig {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc= new Scanner(System.in);
+        System.out.println("Enter character: ");
+        char ch = sc.next().charAt(0);
+    //TO CHECK IS  CHARACTER
+        if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
+            System.out.println("It is a character.");
+    //TO CHECK IS DIGIT OR SYMBOL
+        } else if (ch >= '0' && ch <= '9') {
+            System.out.println("It is a digit.");
+        } else {
+            System.out.println("It is a special symbol.");
+        }
+	}
+}

@@ -1,0 +1,34 @@
+//ASSIGNMENT10
+//CHECK NO IS PALINDROME OR NOT:
+import java.util.*;
+public class PalindromeORnot {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int num = sc.nextInt();
+        
+        if (isPalindrome(num)) {
+            System.out.println(num + " is a palindrome");
+        } else {
+            System.out.println(num + " is not a palindrome");
+        }
+    }
+
+    public static boolean isPalindrome(int num) {
+        int reversed = 0;
+        int original = num;
+
+        while (num != 0) {
+            int digit = num % 10;
+            reversed = reversed * 10 + digit;
+            num /= 10;
+        }
+
+        return original == reversed;
+
+	}
+
+}

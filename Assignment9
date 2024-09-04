@@ -1,0 +1,17 @@
+//Assignment9
+//ASCII VALUE OF GIVEN PARAMETER:
+import java.util.*;
+public class ASCII {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a character: ");
+        char ch = sc.next().charAt(0);
+   //ASCII VALUE
+        int asciiValue =ch;
+        System.out.println("ASCII value of " + ch + " is " + asciiValue);
+
+	}
+
+}

@@ -1,0 +1,22 @@
+//ASSIGNMENT16
+//find compound interest 
+
+import java.util.Scanner;
+public class CompoundInterest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 int Price,Time,Rate;
+		 float Cinterest;
+	      Scanner sc=new Scanner(System.in);
+	      System.out.println("enter Price:");
+	      Price=sc.nextInt();
+	      System.out.println("enter Rate:");
+	      Rate=sc.nextInt();
+	      System.out.println("enter Time:");
+	      Time=sc.nextInt();
+	      Cinterest= Price*(1+(Rate/100))^Time;
+	      System.out.println("Compound interest:"+Cinterest);
+
+	}
+}

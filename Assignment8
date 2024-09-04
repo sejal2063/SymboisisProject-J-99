@@ -1,0 +1,26 @@
+//ASSIGNMENT8
+//AREA AND PERIMETER OF TRIANGLE:
+
+import java.util.*;
+
+public class TrianglAP {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Length :");
+        int L= sc.nextInt();
+        System.out.print("Enter Width:");
+        int W = sc.nextInt();
+    //Area
+        double area =L*W;
+    //Perimeter
+        double Perimeter =2*(L+W);
+        System.out.println("\n");
+        System.out.println("Area of Triangle:"+area);
+        System.out.println("Perimeter of Triangle: " +Perimeter);
+
+	}
+
+}

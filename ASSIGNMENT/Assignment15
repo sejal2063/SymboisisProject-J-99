@@ -1,0 +1,44 @@
+//ASSIGNMENT15
+//MIN AND MAX VALUE OF AN ARRAY
+import java.util.*;
+public class ArrayMinMax {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of elements: ");
+        int n = sc.nextInt();
+        int[] array = new int[n];
+        System.out.println("Enter the elements:");
+        for (int i=0;i<n;i++) {
+            array[i]=sc.nextInt();
+        }
+
+        int min =findMin(array);
+        int max = findMax(array);
+
+        System.out.println("Minimum value: " + min);
+        System.out.println("Maximum value: " + max);
+
+    }
+
+    public static int findMin(int[] array) {
+        int min = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] < min) {
+                min = array[i];
+            }
+        }
+        return min;
+    }
+
+    public static int findMax(int[] array) {
+        int max = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > max) {
+                max = array[i];
+            }
+        }
+        return max;
+	}
+}

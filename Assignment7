@@ -1,0 +1,24 @@
+//ASSIGNMENT8
+//AREA AND CIRCUMFERENCE OF CIRCLE:
+
+import java.util.*;
+public class ASSIGNMENT8 {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+        System.out.print("Enter radius of circle: ");
+        double r= sc.nextDouble();
+        System.out.print("Enter value of PI:");
+        double pi= sc.nextDouble();
+    //Area
+        double area =pi*r*r;
+    //Circumference
+        double circumference =2*pi*r;
+        System.out.println("\n");
+        System.out.println("Area of circle: " + area+"\t");
+        System.out.println("Circumference of circle: " + circumference);
+	}
+
+}

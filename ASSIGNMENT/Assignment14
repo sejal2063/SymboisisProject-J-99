@@ -1,0 +1,41 @@
+//ASSIGNMENT14
+//CALCULATE TOTAL,PERCENTAGE,AND GRADE OF MARKS
+import java.util.*;
+public class StudDetail {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method 
+
+		 Scanner sc= new Scanner(System.in);
+	        System.out.println("Enter marks in Subject 1: ");
+	        int sub1 = sc.nextInt();
+	        System.out.println("Enter marks in Subject 2: ");
+	        int sub2 = sc.nextInt();
+	        System.out.println("Enter marks in Subject 3: ");
+	        int sub3 = sc.nextInt();
+	        
+	        int total = sub1 + sub2 + sub3;
+	        double percentage = (total/300.0)*100;
+	        String grade = getGrade(percentage);
+	        
+	        System.out.println("Total Marks:"+ total);
+	        System.out.println("Percentage:"+ percentage +"%");
+	        System.out.println("Grade:"+grade);
+	    }
+
+	    public static String getGrade(double percentage) {
+	        if (percentage >= 90) {
+	            return "A";
+	        } else if (percentage >= 80) {
+	            return "B";
+	        } else if (percentage >= 70) {
+	            return "C";
+	        } else if (percentage >= 60) {
+	            return "D";
+	        } else {
+	            return "F";
+	        }
+
+	}
+
+}
